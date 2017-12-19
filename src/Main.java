@@ -10,6 +10,14 @@ public class Main {
         assert (a == null);
         a = dataMap.get("a");
         assert (a == 1);
+        Integer aa = dataMap.put("aa", 11);
+        assert (aa == null);
+        aa = dataMap.get("aa");
+        assert (aa == 11);
+        Integer ba = dataMap.put("ba", 12);
+        assert (ba == null);
+        ba = dataMap.get("ba");
+        assert (ba == 12);
         Integer b = dataMap.put("berefdsfaerefad", 2);
         assert (b == null);
         b = dataMap.get("berefdsfaerefad");
@@ -19,5 +27,6 @@ public class Main {
         a1 = dataMap.get("a1");
         assert (a1 == 3);
         System.out.println("done");
+
     }
 }
